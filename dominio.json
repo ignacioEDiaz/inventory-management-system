@@ -1,0 +1,70 @@
+{
+  "idioma": "en",
+  "titulo": "Inventory Management System",
+  "descripcion": "Manage and track physical assets efficiently for warehouse operations",
+  "repo": "inventory-management-system",
+  "recurso": {
+    "nombre": "item",
+    "plural": "items",
+    "etiqueta": "Item",
+    "etiqueta_plural": "Items"
+  },
+  "campos": [
+    {
+      "nombre": "name",
+      "etiqueta": "Name",
+      "tipo": "texto",
+      "requerido": true
+    },
+    {
+      "nombre": "quantity",
+      "etiqueta": "Quantity",
+      "tipo": "numero",
+      "requerido": true
+    },
+    {
+      "nombre": "location",
+      "etiqueta": "Location",
+      "tipo": "texto",
+      "requerido": false
+    },
+    {
+      "nombre": "status",
+      "etiqueta": "Status",
+      "tipo": "opcion",
+      "requerido": false,
+      "opciones": [
+        "in stock",
+        "out of stock",
+        "damaged",
+        "reserved"
+      ]
+    }
+  ],
+  "datos_ejemplo": [
+    {
+      "name": "laptop",
+      "quantity": 15,
+      "location": "warehouse a",
+      "status": "in stock"
+    },
+    {
+      "name": "monitor",
+      "quantity": 30,
+      "location": "warehouse b",
+      "status": "out of stock"
+    },
+    {
+      "name": "keyboard",
+      "quantity": 120,
+      "location": "warehouse a",
+      "status": "in stock"
+    },
+    {
+      "name": "mouse",
+      "quantity": 85,
+      "location": "warehouse b",
+      "status": "damaged"
+    }
+  ]
+}
